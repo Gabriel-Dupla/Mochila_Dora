@@ -30,8 +30,12 @@ form.addEventListener("submit", (evento) => {
     //Se existir, coloca o id dele como existente. Se não, cria o elemento e atribui como id desse elemento a posição do array atual.
     if (existe) {
         itemAtual.id = existe.id;
+
         atualizaElementos(itemAtual)
 
+        //No nosso array de itens, na posição existe.id e sobrescrevemos pelo item atual 
+        itens[existe.id] = itemAtual
+        
     } else {
         itemAtual.id = itens.length;
 
@@ -40,8 +44,6 @@ form.addEventListener("submit", (evento) => {
         itens.push(itemAtual)
 
     }
-
-
 
     localStorage.setItem("itens", JSON.stringify(itens));
 
