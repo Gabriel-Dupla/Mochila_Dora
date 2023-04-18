@@ -35,7 +35,7 @@ Ou
 1. Clonar o repositório
 
 ```
-git clone https://github.com/Gabriel-Dupla/Mochila_Dora
+git clone https://github.com/Gabriel-Dupla/Mochila_Dora.git
 ```
 2. Localizar e abrir a pasta *Mochila_Dora*
 
